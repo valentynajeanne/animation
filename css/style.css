@@ -1,0 +1,399 @@
+
+/*black block-container*/
+
+.block { 
+    position: relative;
+    top: 20%;
+    width: 63%;
+    height: 400px;
+    background-color: #1E1E1E;
+}
+
+/*wrapper_container for position
+ in black block*/
+
+.wrapper_container {
+    position: absolute;
+    top:45%;
+    left: 24%;
+    width: 50px;
+    height: 50px;
+}
+
+/*container was created 
+for "parent" of yellow circles*/
+
+.container {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 25%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: transparent;  
+ }
+
+ /*circle general*/
+
+ .circle {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+ 
+    }
+
+
+/*yellow circle-one*/
+
+.circle-one {
+    background: linear-gradient(to top,
+    transparent 50%, #F4CB04 50%);
+    animation-name: circle-one;
+   }
+
+@keyframes circle-one {
+    0%{ 
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(-40deg);
+
+    }
+
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+/*yellow circle-two*/
+
+.circle-two {
+    background: linear-gradient(to top, #F4CB04 50%, transparent 50%);
+    animation-name: circle-two;
+}
+
+@keyframes circle-two {
+    0%{ 
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+/*container for position white circles in black block*/
+
+ .container_white_circles {
+    z-index: 2;
+    width: 50%;
+    height: 7px;
+    top: 50%;
+    right: 25%;
+    position: absolute;
+    background-color: transparent;
+}
+
+/*this div was created for
+ "parent" of white circles*/
+
+.white_circles {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    top: 0;
+    left: 0; 
+    background-color: transparent;  
+}
+
+/*general keyframes for animation*/ 
+ 
+@keyframes white_circle {
+    0%{ 
+        transform: translate(50px);
+
+    }
+    100%{
+        display: none;
+
+    }
+}
+
+/*white circle general*/
+ 
+.white_circle {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation-name: white_circle;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-delay: 0ms;
+    animation-fill-mode: torwards;
+    background-color: #fff;
+    
+    }
+
+ .white_circle_one {
+    right: 50px;
+    }
+
+ .white_circle_two {
+    right: 90px;
+    }
+
+ .white_circle_three {
+    right: 140px;
+    }
+
+ .white_circle_four {
+    right: 180px;
+    }
+
+ .white_circle_five {
+    right: 220px;
+    
+    }
+
+ .white_circle_six {
+    right: 260px;
+    }
+
+ .white_circle_seven {
+    right: 300px;
+    }
+
+ .white_circle_eight {
+    right: 340px;
+    }  
+ 
+ .white_circle_nine {
+    right: 380px;
+    }
+ @media(max-width: 768px){
+
+/*black block-container*/
+    
+    .block { 
+        position: relative;
+        top: 20%;
+        width: 90%;
+        height: 400px;
+        background-color: #1E1E1E;
+    }
+    
+    /*wrapper_container for position
+     in black block*/
+    
+    .wrapper_container {
+        position: absolute;
+        top:45%;
+        left: 30%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    /*container was created 
+    for "parent" of yellow circles*/
+    
+    .container {
+        z-index: 1;
+        position: relative;
+        top: 0;
+        left: 0%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: transparent;  
+     }
+    
+     /*container for position in black block*/
+    
+     .container_white_circles {
+        z-index: 2;
+        width: 50%;
+        height: 7px;
+        top: 50%;
+        right: 8%;
+        position: absolute;
+        background-color: transparent;
+    }
+    
+    /*this div was created for
+     "parent" of white circle*/
+    
+    .white_circles {
+        position: relative;
+        width: 100%;
+        height: 7px;
+        top: 0;
+        left: 0; 
+        background-color: transparent;  
+    }
+
+    .white_circle {
+        background-color: #fff;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        animation-name: white_circle;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-play-state: running;
+        animation-delay: 0ms;
+        animation-fill-mode: torwards;
+        background-color: #fff;
+        
+        }
+    
+@keyframes white_circle {
+    0%{ 
+        transform: translate(50px);
+
+    }
+    100%{
+        display: none;
+
+    }
+}
+
+.white_circle_one {
+    right: 50px;
+ }
+
+.white_circle_two {
+    right: 90px;
+ }
+
+ .white_circle_three {
+    right: 140px;
+    }
+
+ .white_circle_four {
+    right: 180px;
+    } 
+ }
+
+
+@media(max-width: 300px) {
+    
+    .white_circle_one {
+        right: 75px;
+    }
+
+    .white_circle_two {
+        right: 100px;
+        }
+
+    .white_circle_three {
+        right: 150px;
+        }
+
+    .white_circle_four {
+        right: 200px;
+        }
+    
+    @keyframes white_circle1 {
+        0%{ 
+            transform: translate(20px);
+    
+        }
+        100%{
+            display: none;
+    
+        }
+    }
+    
+    /*black block-container*/
+
+    .block { 
+        position: relative;
+        top: 20%;
+        width: 95%;
+        height: 400px;
+        background-color: #1E1E1E;
+    }
+
+    /*wrapper_container for position
+    yellow circle  
+    in black block*/
+
+    .wrapper_container {
+        position: absolute;
+        top:45%;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*container was created 
+    for "parent" of yellow circles*/
+
+    .container {
+        z-index: 1;
+        position: relative;
+        top: 0;
+        left: 0%;
+        width: 45px;
+        height: 45px;
+        box-sizing: border-box;
+        background-color: transparent;  
+    }
+
+    /*container for position in black block*/
+
+    .container_white_circles {
+        z-index: 2;
+        width: 60%;
+        height: 7px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background-color: transparent;
+    }
+
+    /*this div was created for
+    "parent" of white circle*/
+
+    .white_circles {
+        position: relative;
+        width: 50%;
+        height: 7px;
+        top: 0;
+        left: 130%; 
+        background-color: transparent;  
+    }
+
+}          
+
